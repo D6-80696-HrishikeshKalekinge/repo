@@ -1,0 +1,56 @@
+   Question1 : i. Sort a list of files from home directory by size.
+   cmd : ls -lS
+   output :
+
+
+   Question1 : ii. count the no. of words, characters and lines from above file.
+   cmd : wc -mlw info.txt
+   output : 
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % wc -mlw info.txt
+     5      24     163 info.txt
+
+
+   Question3 : iii. list the lines which don't have word "files"
+   cmd :  grep -v "files" info.txt 
+   output : 
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % grep -v "files" info.txt 
+   "Linux is open source.
+   In linux everything
+   there are several types of file"
+
+   Question4 : iv. list line no.3,4 and 5.
+   cmd : tail -n 4 info.txt | head -n 3
+   output :
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % tail -n 4 info.txt | head -n 3
+   is file.files have permissions.
+   files have inode no.
+   files have size.
+
+   Question5 : list the lines having word "have" along with count.
+   cmd : grep -c 'have' info.txt 
+   output :
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % grep -c 'have' info.txt   
+   3
+
+   Question6 : list the lines having word "have" along with count.
+   cmd : grep 'g$' info.txt  
+   output :
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % grep 'g$' info.txt   
+   In linux everything
+
+
+   Question7 : list only first two lines.
+   cmd : head -n 2 info.txt 
+   output :
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % head -n 2 info.txt 
+   "Linux is open source.
+   In linux everything
+
+
+   Question8 : list the lines starts with "f"
+   cmd : grep "^f" info.txt 
+   output :
+   kshitijkalekinge@Kshitijs-MacBook-Pro Question2 % grep "^f" info.txt 
+   files have inode no.
+   files have size.
+
